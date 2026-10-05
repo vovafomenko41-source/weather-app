@@ -184,3 +184,8 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
+#weatherIcon { font-size: 64px; line-height: 1.5; }
+.footer, .updated-at { color: #555; font-size: 12px; line-height: 1.6; margin-top: 16px; }
+.footer a { color: #0765ac; }
+.search-box input { min-width: 0; }

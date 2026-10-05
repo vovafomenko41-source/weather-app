@@ -18,14 +18,14 @@
 
         <div class="search-box">
             <input type="text"
-                   id="cityInput"
+                   id="cityInput" aria-label="Stadt"
                    placeholder="Stadt eingeben..."
                    autocomplete="off">
 
             <button id="searchButton">Suchen</button>
         </div>
 
-        <p id="errorMessage" class="error"></p>
+        <p id="errorMessage" class="error" role="status" aria-live="polite"></p>
 
         <section class="weather-card">
 
@@ -36,9 +36,7 @@
 
             <div class="weather-main">
 
-                <img id="weatherIcon"
-                     src="https://openweathermap.org/img/wn/01d@2x.png"
-                     alt="Wetter">
+                <span id="weatherIcon" role="img" aria-label="Wetter">🌤️</span>
 
                 <div>
                     <span id="temperature">--</span>
@@ -81,13 +79,13 @@
 
         </section>
 
+        <p id="updatedAt" class="updated-at"></p>
         <p class="footer">
-            Wetterdaten von OpenWeather
+            Wetterdaten: <a href="https://open-meteo.com/">Open-Meteo</a> · Orte: <a href="https://www.geonames.org/">GeoNames</a>
         </p>
 
     </main>
 
-    <script src="config.js"></script>
     <script src="script.js"></script>
 
 </body>
